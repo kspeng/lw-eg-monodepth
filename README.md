@@ -38,7 +38,7 @@ done.
    abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3
     0.1077,     1.0238,      5.387,      0.189,     26.152,      0.860,      0.951,      0.983
 ```
-* We skip first 10 testing files in the computational efficiency evaluation due to the unstability of first few iterations. 
+* We skip first 10 testing files in computing FPS due to the unstability of first few iterations. 
 
 ## Pre-built models
 
