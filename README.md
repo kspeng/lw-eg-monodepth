@@ -1,4 +1,4 @@
-# lweg-monodepth
+# lw-eg-monodepth
 Low-Weight-Edge-Guided-Monodepth
 
 ## Create Dataset Link
