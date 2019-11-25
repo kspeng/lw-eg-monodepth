@@ -1,7 +1,13 @@
 # lw-eg-monodepth
-Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation
+This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [arXiv](). This work is evolved from the project Monodepth [Github](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks
+```
+```
+
+## System Requirements
+This work is implemented using Tensorflow 1.5, CUDA 10.0, cuDNN 7.6, and anaconda/python 3.7 under Ubuntu 18.04LTS. There may have some warning from Tensorflow 1.5, but it won't effect the simmulation.  
 
 ## Create Dataset Link
+Please download the kitti and cityscape dataset and converted the input image to JPEG format in your own path. Then create the link to local directories inside the project as following. 
 ```
 mkdir dataset
 ln -s ~/path/to/kitti/ ./dataset/
@@ -9,13 +15,14 @@ ln -s ~/path/to/cityscapes/ ./dataset/
 ```
 
 ## Train
+We have prepared two bash scripts to train our models on KITTI and Cityscapes dataset. After preparing the dataset, 
 ```
 sh ./bash/bash_train.sh
 ```
 
 ## Evaluation 
 We have prepared two bash scripts to evaluate the performance of Kitti and Eigen splits on Kitti dataset. Please change the varaiables in the scripts to run the evaluation. You will get the similar results we have in the paper.
-* Example
+* Example on vggASPP model with KITTI training result.
 ```
 sh ./bash/bash_evaluate_kitti.sh
 ```
