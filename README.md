@@ -1,5 +1,5 @@
 # lw-eg-monodepth
-Low-Weight-Edge-Guided-Monodepth
+Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation
 
 ## Create Dataset Link
 ```
