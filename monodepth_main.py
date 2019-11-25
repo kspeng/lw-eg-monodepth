@@ -210,13 +210,20 @@ def test(params):
     disparities     = np.zeros((num_test_samples, params.height, params.width), dtype=np.float32)
     disparities_pp  = np.zeros((num_test_samples, params.height, params.width), dtype=np.float32)
     disparities_ppp = np.zeros((num_test_samples, params.height, params.width), dtype=np.float32)    
+    comp_tower  = []
+    comp_offset = 10 # avoid unstable loading efficiency of first few test samples
     for step in range(num_test_samples):
+        st = time.time()
         disp, disp_pp, disp_ppp = sess.run([model.disp_est, model.disp_est_pp, model.disp_est_ppp])
-
+        if step > comp_offset:
+            comp_tower += time.time() - st,
         disparities[step]       = disp
         disparities_pp[step]    = disp_pp
         disparities_ppp[step]   = disp_ppp
+    total_time = sum(comp_tower)
     print('done.')
+    print('Total time: ', round(total_time, 2))    
+    print('Inferece FPS: ', round((num_test_samples-comp_offset)/total_time, 2))
 
     print('writing disparities.')
     if args.output_directory == '':
@@ -224,9 +231,9 @@ def test(params):
     else:
         output_directory = args.output_directory
 
-    #np.save(output_directory + '/disparities.npy',    disparities)
-    #np.save(output_directory + '/disparities_pp.npy', disparities_pp)
-    np.save(output_directory + '/disparities_ppp_city.npy', disparities_ppp)
+    np.save(output_directory + '/disparities.npy',    disparities)
+    np.save(output_directory + '/disparities_pp.npy', disparities_pp)
+    np.save(output_directory + '/disparities_ppp.npy', disparities_ppp)
 
     print('done.')
 
