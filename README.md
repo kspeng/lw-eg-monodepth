@@ -14,6 +14,17 @@ Our work focus on the network optimization and occlusion fading reduction using 
 <p align="center">
   <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-network.jpg" alt="lw-dispnet">
 </p>
+The proposed network is lighter, faster, and better than the conventional DispNet. 
+
+Furthermore, we also resolve the occlusion fading issue of self-supervision method on Depth Estimation. We proposed an Edge-Guided post-processing method to produce the depth estimation results with minimal halo effects. We detect the clear edges and occlusion fading using an edge detector. Then the flip trick is used to keep the clear edges and remove the occlusion fading to yield the final result. The architecture of the proposed Edge-Guided post-processing method is shown as below:
+<p align="center">
+  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-post-proc.jpg" alt="lw-dispnet">
+</p>
+
+The performance is visualized as follow:
+<p align="center">
+  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-mde-demo.jpg" alt="lw-dispnet">
+</p>
 
 ## System Requirements
 This work is implemented using Tensorflow 1.5, CUDA 10.0, cuDNN 7.6, and anaconda/python 3.7 under Ubuntu 18.04LTS. There may have some warnings from Tensorflow 1.5, but it won't effect the simmulation.  
