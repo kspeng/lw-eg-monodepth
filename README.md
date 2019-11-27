@@ -18,12 +18,13 @@ The proposed network is lighter, faster, and better than the conventional DispNe
 
 Furthermore, we also resolve the occlusion fading issue of self-supervision method on Depth Estimation. We proposed an Edge-Guided post-processing method to produce the depth estimation results with minimal halo effects. We detect the clear edges and occlusion fading using an edge detector. Then the flip trick is used to keep the clear edges and remove the occlusion fading to yield the final result. The architecture of the proposed Edge-Guided post-processing method is shown as below:
 <p align="center">
-  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-post-proc.jpg" alt="lw-dispnet">
+  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-post-proc.png" alt="lw-dispnet">
 </p>
 
 The performance is visualized as follow:
 <p align="center">
-  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-mde-demo.jpg" alt="lw-dispnet">
+  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-mde-demo.png" alt="lw-dispnet">
+  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-mde-demo-2.png" alt="lw-dispnet">    
 </p>
 
 ## System Requirements
