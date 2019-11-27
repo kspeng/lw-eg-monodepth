@@ -130,6 +130,7 @@ def train(params):
 
         # SESSION
         config = tf.ConfigProto(allow_soft_placement=True)
+        config.gpu_options.allow_growth = True        
         sess = tf.Session(config=config)
 
         # SAVER
@@ -186,6 +187,7 @@ def test(params):
 
     # SESSION
     config = tf.ConfigProto(allow_soft_placement=True)
+    config.gpu_options.allow_growth = True    
     sess = tf.Session(config=config)
 
     # SAVER
