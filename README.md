@@ -1,10 +1,16 @@
 # lw-eg-monodepth
-This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [arXiv](). This work is evolved from the project Monodepth [Github](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks
+This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [arXiv](https://arxiv.org/abs/1911.11705). This work is evolved from the project Monodepth [Github](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks.
 ```
+@article{ kuo2019arXiv,
+    author={Kuo-Shiuan Peng and Gregory Ditzler and Jerzy Rozenblit},
+    title={ Edge-Guided Occlusion Fading Reduction for a Light-Weighted Self-Supervised Monocular Depth Estimation },
+    journal={ arXiv },
+    pages={1911.11705}, 
+    year={2019}}
 ```
 
 ## System Requirements
-This work is implemented using Tensorflow 1.5, CUDA 10.0, cuDNN 7.6, and anaconda/python 3.7 under Ubuntu 18.04LTS. There may have some warning from Tensorflow 1.5, but it won't effect the simmulation.  
+This work is implemented using Tensorflow 1.5, CUDA 10.0, cuDNN 7.6, and anaconda/python 3.7 under Ubuntu 18.04LTS. There may have some warnings from Tensorflow 1.5, but it won't effect the simmulation.  
 
 ## Create Dataset Link
 Please download the kitti and cityscape dataset and converted the input image to JPEG format in your own path. Then create the link to local directories inside the project as following. 
