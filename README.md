@@ -1,5 +1,5 @@
 # lw-eg-monodepth
-This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [arXiv](https://arxiv.org/abs/1911.11705). This work is evolved from the project [Monodepth](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks.
+This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [[arXiv](https://arxiv.org/abs/1911.11705)]. This work is evolved from the project [Monodepth](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks.
 ```
 @article{ kuo2019arXiv,
     author={Kuo-Shiuan Peng and Gregory Ditzler and Jerzy Rozenblit},
@@ -8,6 +8,12 @@ This is the implementation of the paper: Light-Weight Edge-Guided Self-supervise
     pages={1911.11705}, 
     year={2019}}
 ```
+
+## Main Contributions
+Our work focus on the network optimization and occlusion fading reduction using post-procssing. We introduce Atrous Spatial Pyramid Pooling (ASPP) module into DispNet to improve the performance and reduce the computational costs including paramters and inference time. The proposed Light-Weight Dispnet is shown as below
+<p align="center">
+  <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-network.jpg" alt="lw-dispnet">
+</p>
 
 ## System Requirements
 This work is implemented using Tensorflow 1.5, CUDA 10.0, cuDNN 7.6, and anaconda/python 3.7 under Ubuntu 18.04LTS. There may have some warnings from Tensorflow 1.5, but it won't effect the simmulation.  
