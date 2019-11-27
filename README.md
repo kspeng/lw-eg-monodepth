@@ -21,10 +21,11 @@ ln -s ~/path/to/cityscapes/ ./dataset/
 ```
 
 ## Train
-We have prepared two bash scripts to train our models on KITTI and Cityscapes dataset. After preparing the dataset, 
+We have prepared two bash scripts to train our models on KITTI and Cityscapes dataset. After preparing the dataset, please run bash file as following (Take kitti dataset as example): 
 ```
-sh ./bash/bash_train.sh
+sh ./bash/bash_train_kitti.sh
 ```
+Please configurate the model and output file path by your preference.
 
 ## Evaluation 
 We have prepared two bash scripts to evaluate the performance of Kitti and Eigen splits on Kitti dataset. Please change the varaiables in the scripts to run the evaluation. You will get the similar results we have in the paper.
