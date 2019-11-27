@@ -15,7 +15,8 @@ Our work focus on the network optimization and occlusion fading reduction using 
   <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-network.jpg" alt="lw-dispnet">
 </p>
 The proposed network is lighter, faster, and better than the conventional DispNet. 
-\\
+
+
 Furthermore, we also resolve the occlusion fading issue of self-supervision method on Depth Estimation. We proposed an Edge-Guided post-processing method involving from Godard et. al.[Monodepth](https://github.com/mrharicot/monodepth) to produce the depth estimation results with minimal halo effects. We detect the clear edges and occlusion fading using an edge detector. Then the flip trick is used to keep the clear edges and remove the occlusion fading to yield the final result. The architecture of the proposed Edge-Guided post-processing method is shown as below:
 <p align="center">
   <img src="https://github.com/kspeng/lw-eg-monodepth/blob/master/fig/lw-eg-post-proc.png" alt="lw-dispnet">
