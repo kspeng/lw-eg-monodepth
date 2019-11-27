@@ -1,5 +1,5 @@
 # lw-eg-monodepth
-This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [arXiv](https://arxiv.org/abs/1911.11705). This work is evolved from the project Monodepth [Github](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks.
+This is the implementation of the paper: Light-Weight Edge-Guided Self-supervised Monocular Depth Estimation [arXiv](https://arxiv.org/abs/1911.11705). This work is evolved from the project [Monodepth](https://github.com/mrharicot/monodepth). Please cite our paper if you use our results. Thanks.
 ```
 @article{ kuo2019arXiv,
     author={Kuo-Shiuan Peng and Gregory Ditzler and Jerzy Rozenblit},
