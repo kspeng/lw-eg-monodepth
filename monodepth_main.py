@@ -217,7 +217,7 @@ def test(params):
     for step in range(num_test_samples):
         st = time.time()
         disp, disp_pp, disp_ppp = sess.run([model.disp_est, model.disp_est_pp, model.disp_est_ppp])
-        if step > comp_offset:
+        if step >= comp_offset:
             comp_tower += time.time() - st,
         disparities[step]       = disp
         disparities_pp[step]    = disp_pp
