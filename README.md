@@ -76,4 +76,4 @@ done.
 
 ## Pre-built models
 
-We have prepared the built models for references [here](https://drive.google.com/open?id=1njgQyNf4Bk5TEQoXzgN4vs31Texi0sxN).
+We have prepared the built models for references [here](https://drive.google.com/drive/folders/1njgQyNf4Bk5TEQoXzgN4vs31Texi0sxN?usp=sharing).
