@@ -77,3 +77,17 @@ done.
 ## Pre-built models
 
 We have prepared the built models for references [here](https://drive.google.com/drive/folders/1njgQyNf4Bk5TEQoXzgN4vs31Texi0sxN?usp=sharing).
+
+## U of Arizona HPC users
+
+I have prepared a best practice of bash files for UA hpc users. The bash files are located in: /bash/ua_hpc_user/. 
+
+The sample command is:
+
+```
+sh ./bash/ua_hpc_user/bash_train_kitti_ua.sh
+```
+
+
+
+
