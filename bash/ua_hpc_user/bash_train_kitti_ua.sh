@@ -2,6 +2,9 @@
 encoder_='vggASPP'
 batch_=8
 epoch_=100
+alpha_image_loss_=0.85
+disp_gradient_loss_weight_=0.5
+
 dataset_='kitti'
 data_path_='/xdisk/ditzler/mig2020/rsgrps/ditzler/kspeng/workspace/dataset/'
 
@@ -17,5 +20,7 @@ monodepth_main.py --mode train \
 --dataset ${dataset_} \
 --encoder ${encoder_} \
 --batch_size ${batch_} \
---num_epochs ${epoch_}
+--num_epochs ${epoch_} \
+--alpha_image_loss ${alpha_image_loss_} \
+--disp_gradient_loss_weight ${disp_gradient_loss_weight_}
 
